@@ -24,7 +24,7 @@ training:
 checkpoint:
   pvc: bench-checkpoints
   mount_path: /mnt/checkpoints
-  save_steps: 1000
+  save_steps: 50
 fault:
   action: delete-worker-pod
   target: node-1          # kill the second worker, not rank 0
