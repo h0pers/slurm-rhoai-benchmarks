@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+*.egg-info/
+dist/
+.DS_Store
+.doc*.txt
+docs/_build/
+docs/jupyter_execute/
+.ipynb_checkpoints/

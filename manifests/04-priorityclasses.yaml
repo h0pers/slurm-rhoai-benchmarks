@@ -1,0 +1,15 @@
+# Workload priority classes for the queue-priority scenario.
+# bench-high preempts bench-low on bench-cq (withinClusterQueue: LowerPriority).
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: WorkloadPriorityClass
+metadata:
+  name: bench-high
+value: 1000
+description: "High-priority benchmark workloads (preempts bench-low)"
+---
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: WorkloadPriorityClass
+metadata:
+  name: bench-low
+value: 100
+description: "Low-priority benchmark workloads (preemptible)"

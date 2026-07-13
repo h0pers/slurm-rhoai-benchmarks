@@ -1,0 +1,9 @@
+# Benchmark namespace. The kueue.openshift.io/managed label is required:
+# the cluster's `default` ClusterQueue only admits workloads from namespaces
+# carrying this label (see its spec.namespaceSelector).
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: slurm-bench
+  labels:
+    kueue.openshift.io/managed: "true"

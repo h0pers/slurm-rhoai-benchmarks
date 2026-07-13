@@ -1,0 +1,16 @@
+# Shared checkpoint volume for the fault-tolerant scenario.
+# Uses the `nfs` StorageClass because checkpoints must be readable by a
+# replacement pod that may start on a different node (ReadWriteMany);
+# the default gp3-csi (EBS) only supports single-node attachment.
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: bench-checkpoints
+  namespace: slurm-bench
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs
+  resources:
+    requests:
+      storage: 20Gi

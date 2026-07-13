@@ -1,0 +1,34 @@
+# Workload class 2: single-node, multi-GPU data-parallel training.
+# Same script as scenario 1; the runtime's torchrun launches 4 workers
+# (one per GPU) and PyTorch DDP synchronizes gradients over NVLink/PCIe.
+name: multi-gpu-ddp
+workload_class: 2
+kind: train
+description: DistilBERT sentiment fine-tuning, 4-GPU DDP on one node
+queue: default
+runtime: torch-distributed
+nodes: 1
+resources_per_node:
+  nvidia.com/gpu: 4
+  cpu: "24"
+  memory: 128Gi
+training:
+  model: distilbert-base-uncased
+  dataset: imdb
+  dataset_size: 4000
+  batch_size: 16   # per device; global batch = 64
+  # Short by design - just long enough to observe platform behavior.
+  # Raise only if a run finishes before its measurement window.
+  max_steps: 200
+repetitions: 3
+timeout_s: 2400
+baseline_scenario: single-gpu   # for scaling-efficiency computation
+pass_criteria:
+  - TrainJob reaches Complete
+  - all 4 ranks participate (world_size=4 in logs)
+  - scaling efficiency vs single-gpu recorded
+checks:
+  - completed
+  - throughput_recorded
+  - gpu_util_positive
+  - world_size_matches

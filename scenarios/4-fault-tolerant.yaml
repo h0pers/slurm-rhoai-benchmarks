@@ -1,0 +1,40 @@
+# Workload class 4: fault-tolerant training with checkpointing.
+# Periodic checkpoints go to a shared RWX (NFS) PVC. Mid-run, the harness
+# deletes one worker pod; the job must restart and resume from the last
+# checkpoint instead of step 0.
+name: fault-tolerant
+workload_class: 4
+kind: train
+description: Checkpointed training surviving a worker-pod kill
+queue: default
+runtime: torch-distributed
+nodes: 2
+resources_per_node:
+  nvidia.com/gpu: 2
+  cpu: "16"
+  memory: 64Gi
+training:
+  model: distilbert-base-uncased
+  dataset: imdb
+  dataset_size: 4000
+  batch_size: 16
+  # Short by design - must stay long enough that the job is still training
+  # when the worker is killed (after_s: 60) and can resume from checkpoint.
+  max_steps: 600
+checkpoint:
+  pvc: bench-checkpoints
+  mount_path: /mnt/checkpoints
+  save_steps: 1000
+fault:
+  action: delete-worker-pod
+  target: node-1          # kill the second worker, not rank 0
+  after_s: 60
+repetitions: 3
+timeout_s: 3600
+pass_criteria:
+  - job recovers and reaches Complete after pod kill
+  - training resumed from checkpoint (resumed step > 0 in logs)
+  - recovery time (kill -> training resumed) recorded
+checks:
+  - completed
+  - resumed_from_checkpoint

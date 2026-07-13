@@ -1,0 +1,32 @@
+# Workload class 1: single-node, single-GPU training.
+# Baseline for all other scenarios: throughput measured here is the
+# reference point for DDP / multi-node scaling efficiency.
+name: single-gpu
+workload_class: 1
+kind: train
+description: DistilBERT sentiment fine-tuning on one GPU
+queue: default
+runtime: torch-distributed
+nodes: 1
+resources_per_node:
+  nvidia.com/gpu: 1
+  cpu: "8"
+  memory: 32Gi
+training:
+  model: distilbert-base-uncased
+  dataset: imdb
+  dataset_size: 4000
+  batch_size: 16
+  # Short by design - just long enough to observe platform behavior.
+  # Raise only if a run finishes before its measurement window.
+  max_steps: 200
+repetitions: 3
+timeout_s: 2400
+pass_criteria:
+  - TrainJob reaches Complete
+  - throughput (samples/s) recorded
+  - GPU utilization > 0 during training window
+checks:
+  - completed
+  - throughput_recorded
+  - gpu_util_positive

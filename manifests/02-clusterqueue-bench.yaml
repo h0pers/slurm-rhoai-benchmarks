@@ -1,0 +1,37 @@
+# Dedicated ClusterQueue for scheduling-behavior scenarios (gang-scheduling,
+# queue-priority). A separate queue is used because the shared `default`
+# ClusterQueue has preemption disabled (Never), and we must not change a
+# queue other tenants rely on.
+#
+# NOTE: quotas here cover the same 8 physical GPUs as the `default`
+# ClusterQueue (quotas are logical, not reservations). Do not run scenarios
+# 5-6 while other GPU workloads are active.
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: ClusterQueue
+metadata:
+  name: bench-cq
+spec:
+  namespaceSelector:
+    matchLabels:
+      kubernetes.io/metadata.name: slurm-bench
+  queueingStrategy: BestEffortFIFO
+  preemption:
+    withinClusterQueue: LowerPriority
+    reclaimWithinCohort: Never
+    borrowWithinCohort:
+      policy: Never
+  resourceGroups:
+    - coveredResources: ["cpu", "memory"]
+      flavors:
+        - name: default-flavor
+          resources:
+            - name: cpu
+              nominalQuota: "96"
+            - name: memory
+              nominalQuota: 700Gi
+    - coveredResources: ["nvidia.com/gpu"]
+      flavors:
+        - name: nvidia-gpu-flavor
+          resources:
+            - name: nvidia.com/gpu
+              nominalQuota: 8

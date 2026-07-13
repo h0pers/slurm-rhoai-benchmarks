@@ -1,0 +1,34 @@
+# Workload class 3: multi-node distributed training.
+# 2 nodes x 2 GPUs; NCCL gradient sync crosses the pod network between
+# nodes. Also implicitly validates gang start (both pods must run together).
+name: multi-node
+workload_class: 3
+kind: train
+description: DistilBERT sentiment fine-tuning, 2 nodes x 2 GPUs (NCCL over pod network)
+queue: default
+runtime: torch-distributed
+nodes: 2
+resources_per_node:
+  nvidia.com/gpu: 2
+  cpu: "16"
+  memory: 64Gi
+training:
+  model: distilbert-base-uncased
+  dataset: imdb
+  dataset_size: 4000
+  batch_size: 16   # per device; global batch = 64
+  # Short by design - just long enough to observe platform behavior.
+  # Raise only if a run finishes before its measurement window.
+  max_steps: 200
+repetitions: 3
+timeout_s: 2400
+baseline_scenario: single-gpu
+pass_criteria:
+  - TrainJob reaches Complete
+  - world_size=4 across 2 pods
+  - inter-node scaling efficiency recorded
+checks:
+  - completed
+  - throughput_recorded
+  - gpu_util_positive
+  - world_size_matches

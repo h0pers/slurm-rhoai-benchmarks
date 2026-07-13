@@ -1,0 +1,8 @@
+# LocalQueue for scenarios 5-6 (gang-scheduling, queue-priority).
+apiVersion: kueue.x-k8s.io/v1beta1
+kind: LocalQueue
+metadata:
+  name: bench-queue
+  namespace: slurm-bench
+spec:
+  clusterQueue: bench-cq

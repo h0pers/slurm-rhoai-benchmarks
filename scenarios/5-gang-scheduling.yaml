@@ -1,0 +1,35 @@
+# Workload class 5: gang-scheduled jobs (all-or-nothing admission).
+# A blocker job occupies 4 of 8 quota GPUs. The measured job needs 6, so
+# quota admission (4+6 > 8) must keep it fully Pending (zero pods created)
+# until the blocker finishes, then start every worker together. Shapes
+# tolerate one externally-used GPU on the cluster.
+name: gang-scheduling
+workload_class: 5
+kind: gang
+description: All-or-nothing admission under partial GPU availability
+queue: bench-queue
+runtime: torch-distributed
+blocker:
+  nodes: 1
+  resources_per_node:
+    nvidia.com/gpu: 4
+    cpu: "8"
+    memory: 32Gi
+  hold_s: 180             # blocker sleeps holding its GPUs, then exits
+measured:
+  nodes: 2
+  resources_per_node:
+    nvidia.com/gpu: 3
+    cpu: "16"
+    memory: 64Gi
+  hold_s: 30              # short workload; we measure admission, not training
+repetitions: 3
+timeout_s: 1200
+pass_criteria:
+  - measured job creates ZERO pods while blocker holds GPUs
+  - measured job admitted only after blocker completes
+  - both measured pods start within a small window (gang start)
+  - admission latency (blocker end -> measured admitted) recorded
+checks:
+  - zero_pods_while_blocked
+  - completed
