@@ -9,3 +9,4 @@ dist/
 docs/_build/
 docs/jupyter_execute/
 .ipynb_checkpoints/
+.claude/
