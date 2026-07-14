@@ -30,4 +30,5 @@ notebooks/5-gang-scheduling
 notebooks/6-queue-priority
 notebooks/7-hpc-math
 results
+next-steps
 ```
