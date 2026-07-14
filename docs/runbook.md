@@ -38,6 +38,85 @@ This creates:
 `default` queue. Do not run scenarios 5-6 while other GPU workloads are
 active.
 
+### Increase shared memory for multi-node jobs
+
+Multi-node training crashes with `No space left on device` on
+`/dev/shm`. Kubernetes gives each pod 64 MB of shared memory by default,
+but PyTorch needs more when GPUs talk across nodes.
+
+Run this once before multi-node scenarios (3, 4):
+
+```bash
+oc patch clustertrainingruntime torch-distributed --type=json -p '[
+  {"op": "add",
+   "path": "/spec/template/spec/replicatedJobs/0/template/spec/template/spec/volumes",
+   "value": [{"name": "dshm", "emptyDir": {"medium": "Memory", "sizeLimit": "2Gi"}}]},
+  {"op": "add",
+   "path": "/spec/template/spec/replicatedJobs/0/template/spec/template/spec/containers/0/volumeMounts",
+   "value": [{"name": "dshm", "mountPath": "/dev/shm"}]}
+]'
+```
+
+Single-node scenarios (1, 2) are not affected.
+
+### Provide the shared checkpoint volume
+
+The fault-tolerant scenario (4) saves checkpoints to a shared disk (the
+`bench-checkpoints` PVC) at `/mnt/checkpoints`. The disk must be attached
+to the pods, or training fails the moment it tries to save.
+
+Attach it on the runtime, not per job. The SDK's per-job way of attaching
+it is silently dropped on this cluster, so the disk never shows up.
+Patching the runtime (like `/dev/shm` above) always works.
+
+Run this once before the fault-tolerant scenario (4):
+
+```bash
+oc patch clustertrainingruntime torch-distributed --type=json -p '[
+  {"op": "add",
+   "path": "/spec/template/spec/replicatedJobs/0/template/spec/template/spec/volumes/-",
+   "value": {"name": "checkpoints", "persistentVolumeClaim": {"claimName": "bench-checkpoints"}}},
+  {"op": "add",
+   "path": "/spec/template/spec/replicatedJobs/0/template/spec/template/spec/containers/0/volumeMounts/-",
+   "value": {"name": "checkpoints", "mountPath": "/mnt/checkpoints"}}
+]'
+```
+
+Other scenarios mount the disk too but never write to it, so this is
+safe. `oc apply -f manifests/` creates the PVC.
+
+### Enable synchronized restarts for fault-tolerant training
+
+When a worker pod dies during distributed training, all other ranks
+crash too. By default, Kubernetes restarts each container independently
+with increasing delays (CrashLoopBackOff). The pods never start at the
+same time, so they can never reconnect.
+
+The fix uses two settings that work together:
+
+- `backoffLimit: 0` - instead of retrying inside the same pod, fail
+  the Job immediately
+- `failurePolicy.maxRestarts: 3` - when a Job fails, recreate all
+  pods at once so they start together
+
+```bash
+oc patch clustertrainingruntime torch-distributed --type=json -p '[
+  {"op": "add",
+   "path": "/spec/template/spec/replicatedJobs/0/template/spec/backoffLimit",
+   "value": 0}
+]'
+
+oc patch clustertrainingruntime torch-distributed --type=json -p '[
+  {"op": "add",
+   "path": "/spec/template/spec/failurePolicy",
+   "value": {"maxRestarts": 3}}
+]'
+```
+
+This is safe for all scenarios. Normal training that completes without
+errors is not affected. The `maxRestarts` limit prevents infinite loops
+if there is a real bug in the training code.
+
 ## Running a scenario
 
 List available scenarios:
