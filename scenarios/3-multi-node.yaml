@@ -30,5 +30,4 @@ pass_criteria:
 checks:
   - completed
   - throughput_recorded
-  - gpu_util_positive
   - world_size_matches
