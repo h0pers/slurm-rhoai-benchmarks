@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "scenario": "multi-node",
+  "run_id": "2026-07-13 17:42:06",
+  "config": {
+    "name": "multi-node",
+    "workload_class": 3,
+    "description": "DistilBERT sentiment fine-tuning, 2 nodes x 2 GPUs (NCCL over pod network)",
+    "queue": "default",
+    "runtime": "torch-distributed",
+    "repetitions": 3,
+    "timeout_s": 2400,
+    "pass_criteria": [
+      "TrainJob reaches Complete",
+      "world_size=4 across 2 pods",
+      "inter-node scaling efficiency recorded"
+    ],
+    "checks": [
+      "completed",
+      "throughput_recorded",
+      "world_size_matches"
+    ],
+    "kind": "train",
+    "nodes": 2,
+    "resources_per_node": {
+      "nvidia.com/gpu": 2,
+      "cpu": "16",
+      "memory": "64Gi"
+    },
+    "training": {
+      "model": "distilbert-base-uncased",
+      "dataset": "imdb",
+      "dataset_size": 4000,
+      "batch_size": 16,
+      "max_steps": 200
+    },
+    "checkpoint": null,
+    "fault": null,
+    "baseline_scenario": "single-gpu"
+  },
+  "config_hash": "7351b5556139",
+  "versions": {
+    "sdk": "0.4.1",
+    "runtime": "torch-distributed",
+    "kubernetes": "v1.34.6"
+  },
+  "timestamps": {
+    "submitted": "2026-07-13T17:42:07Z",
+    "admitted": "2026-07-13T17:42:07Z",
+    "pods_running": "2026-07-13T17:42:08Z",
+    "completed": "2026-07-13T17:43:23Z"
+  },
+  "durations_s": {
+    "queue": 0.0,
+    "startup": 1.0,
+    "training": 75.0,
+    "total": 76.0
+  },
+  "metrics": {
+    "world_size": 4,
+    "train_runtime_s": 45.5,
+    "train_samples_per_second": 281.46,
+    "mean_pct": 94.0,
+    "max_pct": 94.0,
+    "gpu_count": 4,
+    "gang_start_spread_s": 0.0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": ""
+}

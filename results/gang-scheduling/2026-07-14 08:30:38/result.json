@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "scenario": "gang-scheduling",
+  "run_id": "2026-07-14 08:30:38",
+  "config": {
+    "name": "gang-scheduling",
+    "workload_class": 5,
+    "description": "All-or-nothing admission under partial GPU availability",
+    "queue": "bench-queue",
+    "runtime": "torch-distributed",
+    "repetitions": 3,
+    "timeout_s": 1200,
+    "pass_criteria": [
+      "measured job creates ZERO pods while blocker holds GPUs",
+      "measured job admitted only after blocker completes",
+      "both measured pods start within a small window (gang start)",
+      "admission latency (blocker end -> measured admitted) recorded"
+    ],
+    "checks": [
+      "zero_pods_while_blocked",
+      "completed"
+    ],
+    "kind": "gang",
+    "blocker": {
+      "nodes": 1,
+      "resources_per_node": {
+        "nvidia.com/gpu": 4,
+        "cpu": "8",
+        "memory": "32Gi"
+      },
+      "hold_s": 180,
+      "priority_class": null,
+      "submit_after_s": null
+    },
+    "measured": {
+      "nodes": 2,
+      "resources_per_node": {
+        "nvidia.com/gpu": 3,
+        "cpu": "16",
+        "memory": "64Gi"
+      },
+      "hold_s": 30,
+      "priority_class": null,
+      "submit_after_s": null
+    }
+  },
+  "config_hash": "729f3242c90f",
+  "versions": {
+    "sdk": "0.4.1",
+    "runtime": "torch-distributed",
+    "kubernetes": "v1.34.6"
+  },
+  "timestamps": {
+    "submitted": "2026-07-14T08:30:46Z",
+    "blocker_completed": "2026-07-14T08:33:45Z",
+    "admitted": "2026-07-14T08:33:46Z",
+    "pods_running": "2026-07-14T08:33:48Z",
+    "completed": "2026-07-14T08:34:24Z"
+  },
+  "durations_s": {
+    "queue": 180.0,
+    "startup": 2.0,
+    "training": 36.0,
+    "total": 218.0
+  },
+  "metrics": {
+    "pods_while_blocked": 0,
+    "admission_latency_s": 1.0,
+    "gang_start_spread_s": 0.0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": ""
+}

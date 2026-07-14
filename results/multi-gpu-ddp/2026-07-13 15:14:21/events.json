@@ -1,0 +1,1082 @@
+[
+  {
+    "time": "2026-07-13 15:12:26.268993+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151225-node-0-0-lx4f5",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-multi-gpu-ddp-151225-node-0-0-lx4f5 to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151225-node-0-0-lx4f5",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.49/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151225-node-0-0-lx4f5",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:12:27+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151225-node-0-0-lx4f5",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:12:27+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151225-node-0-0-lx4f5",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151225-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151225-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-multi-gpu-ddp-151225-node-0-0-lx4f5"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151225-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:13:18+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151225-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151225",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-multi-gpu-ddp-151225-83906"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151225",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151225",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:12:26+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151225",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:13:18+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151225",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:13:18+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151225",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-multi-gpu-ddp-151225-83906' is declared finished"
+  },
+  {
+    "time": "2026-07-13 15:13:24.777109+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151323-node-0-0-c8s6s",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-multi-gpu-ddp-151323-node-0-0-c8s6s to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:13:25+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151323-node-0-0-c8s6s",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.50/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:13:25+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151323-node-0-0-c8s6s",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:13:25+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151323-node-0-0-c8s6s",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:13:25+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151323-node-0-0-c8s6s",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151323-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151323-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-multi-gpu-ddp-151323-node-0-0-c8s6s"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151323-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:14:15+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151323-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151323",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-multi-gpu-ddp-151323-d71da"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151323",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151323",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:13:24+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151323",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:14:15+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151323",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:14:15+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151323",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-multi-gpu-ddp-151323-d71da' is declared finished"
+  },
+  {
+    "time": "2026-07-13 15:14:22.531729+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151421-node-0-0-z778d",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-multi-gpu-ddp-151421-node-0-0-z778d to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:14:23+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151421-node-0-0-z778d",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.51/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:14:23+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151421-node-0-0-z778d",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:14:23+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151421-node-0-0-z778d",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:14:23+00:00",
+    "object": "Pod/bench-multi-gpu-ddp-151421-node-0-0-z778d",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151421-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151421-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-multi-gpu-ddp-151421-node-0-0-z778d"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151421-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:15:13+00:00",
+    "object": "Job/bench-multi-gpu-ddp-151421-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151421",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-multi-gpu-ddp-151421-2d025"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151421",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151421",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:14:22+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151421",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:15:13+00:00",
+    "object": "JobSet/bench-multi-gpu-ddp-151421",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:15:13+00:00",
+    "object": "TrainJob/bench-multi-gpu-ddp-151421",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-multi-gpu-ddp-151421-2d025' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:47:58.691876+00:00",
+    "object": "Pod/bench-single-gpu-144757-node-0-0-8lmb7",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-144757-node-0-0-8lmb7 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:47:59+00:00",
+    "object": "Pod/bench-single-gpu-144757-node-0-0-8lmb7",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.223/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:47:59+00:00",
+    "object": "Pod/bench-single-gpu-144757-node-0-0-8lmb7",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:47:59+00:00",
+    "object": "Pod/bench-single-gpu-144757-node-0-0-8lmb7",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:47:59+00:00",
+    "object": "Pod/bench-single-gpu-144757-node-0-0-8lmb7",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "Job/bench-single-gpu-144757-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "Job/bench-single-gpu-144757-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-144757-node-0-0-8lmb7"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "Job/bench-single-gpu-144757-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:48:35+00:00",
+    "object": "Job/bench-single-gpu-144757-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "TrainJob/bench-single-gpu-144757",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-144757-faf86"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "JobSet/bench-single-gpu-144757",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "TrainJob/bench-single-gpu-144757",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:47:58+00:00",
+    "object": "JobSet/bench-single-gpu-144757",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:48:35+00:00",
+    "object": "JobSet/bench-single-gpu-144757",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:48:35+00:00",
+    "object": "TrainJob/bench-single-gpu-144757",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-144757-faf86' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:48:41.644095+00:00",
+    "object": "Pod/bench-single-gpu-144840-node-0-0-fkzsc",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-144840-node-0-0-fkzsc to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:48:42+00:00",
+    "object": "Pod/bench-single-gpu-144840-node-0-0-fkzsc",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.224/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:48:42+00:00",
+    "object": "Pod/bench-single-gpu-144840-node-0-0-fkzsc",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:48:42+00:00",
+    "object": "Pod/bench-single-gpu-144840-node-0-0-fkzsc",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:48:42+00:00",
+    "object": "Pod/bench-single-gpu-144840-node-0-0-fkzsc",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "Job/bench-single-gpu-144840-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "Job/bench-single-gpu-144840-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-144840-node-0-0-fkzsc"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "Job/bench-single-gpu-144840-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:49:18+00:00",
+    "object": "Job/bench-single-gpu-144840-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "TrainJob/bench-single-gpu-144840",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-144840-90938"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "JobSet/bench-single-gpu-144840",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "TrainJob/bench-single-gpu-144840",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:48:41+00:00",
+    "object": "JobSet/bench-single-gpu-144840",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:49:18+00:00",
+    "object": "JobSet/bench-single-gpu-144840",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:49:19+00:00",
+    "object": "TrainJob/bench-single-gpu-144840",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-144840-90938' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:49:23.372371+00:00",
+    "object": "Pod/bench-single-gpu-144922-node-0-0-jkjds",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-144922-node-0-0-jkjds to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:49:24+00:00",
+    "object": "Pod/bench-single-gpu-144922-node-0-0-jkjds",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.225/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:49:24+00:00",
+    "object": "Pod/bench-single-gpu-144922-node-0-0-jkjds",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:49:24+00:00",
+    "object": "Pod/bench-single-gpu-144922-node-0-0-jkjds",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:49:24+00:00",
+    "object": "Pod/bench-single-gpu-144922-node-0-0-jkjds",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "Job/bench-single-gpu-144922-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "Job/bench-single-gpu-144922-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-144922-node-0-0-jkjds"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "Job/bench-single-gpu-144922-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:50:00+00:00",
+    "object": "Job/bench-single-gpu-144922-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "TrainJob/bench-single-gpu-144922",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-144922-78bca"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "JobSet/bench-single-gpu-144922",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "TrainJob/bench-single-gpu-144922",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:49:23+00:00",
+    "object": "JobSet/bench-single-gpu-144922",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:50:00+00:00",
+    "object": "JobSet/bench-single-gpu-144922",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:50:00+00:00",
+    "object": "TrainJob/bench-single-gpu-144922",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-144922-78bca' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:56:55.424838+00:00",
+    "object": "Pod/bench-single-gpu-145654-node-0-0-hzl7l",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-145654-node-0-0-hzl7l to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:56:56+00:00",
+    "object": "Pod/bench-single-gpu-145654-node-0-0-hzl7l",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.227/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:56:56+00:00",
+    "object": "Pod/bench-single-gpu-145654-node-0-0-hzl7l",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:56:56+00:00",
+    "object": "Pod/bench-single-gpu-145654-node-0-0-hzl7l",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:56:56+00:00",
+    "object": "Pod/bench-single-gpu-145654-node-0-0-hzl7l",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "Job/bench-single-gpu-145654-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "Job/bench-single-gpu-145654-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-145654-node-0-0-hzl7l"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "Job/bench-single-gpu-145654-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:57:31+00:00",
+    "object": "Job/bench-single-gpu-145654-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "TrainJob/bench-single-gpu-145654",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-145654-e2c1b"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "JobSet/bench-single-gpu-145654",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "TrainJob/bench-single-gpu-145654",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:56:55+00:00",
+    "object": "JobSet/bench-single-gpu-145654",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:57:31+00:00",
+    "object": "JobSet/bench-single-gpu-145654",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:57:32+00:00",
+    "object": "TrainJob/bench-single-gpu-145654",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-145654-e2c1b' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:57:39.477150+00:00",
+    "object": "Pod/bench-single-gpu-145738-node-0-0-5mnb8",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-145738-node-0-0-5mnb8 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:57:40+00:00",
+    "object": "Pod/bench-single-gpu-145738-node-0-0-5mnb8",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.228/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:57:40+00:00",
+    "object": "Pod/bench-single-gpu-145738-node-0-0-5mnb8",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:57:40+00:00",
+    "object": "Pod/bench-single-gpu-145738-node-0-0-5mnb8",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:57:40+00:00",
+    "object": "Pod/bench-single-gpu-145738-node-0-0-5mnb8",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "Job/bench-single-gpu-145738-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "Job/bench-single-gpu-145738-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-145738-node-0-0-5mnb8"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "Job/bench-single-gpu-145738-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:58:16+00:00",
+    "object": "Job/bench-single-gpu-145738-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "TrainJob/bench-single-gpu-145738",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-145738-284eb"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "JobSet/bench-single-gpu-145738",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "TrainJob/bench-single-gpu-145738",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:57:39+00:00",
+    "object": "JobSet/bench-single-gpu-145738",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:58:16+00:00",
+    "object": "JobSet/bench-single-gpu-145738",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:58:16+00:00",
+    "object": "TrainJob/bench-single-gpu-145738",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-145738-284eb' is declared finished"
+  },
+  {
+    "time": "2026-07-13 14:58:21.149962+00:00",
+    "object": "Pod/bench-single-gpu-145820-node-0-0-9xkvd",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-145820-node-0-0-9xkvd to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "Pod/bench-single-gpu-145820-node-0-0-9xkvd",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.229/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "Pod/bench-single-gpu-145820-node-0-0-9xkvd",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 14:58:22+00:00",
+    "object": "Pod/bench-single-gpu-145820-node-0-0-9xkvd",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 14:58:22+00:00",
+    "object": "Pod/bench-single-gpu-145820-node-0-0-9xkvd",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 14:58:20+00:00",
+    "object": "Job/bench-single-gpu-145820-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "Job/bench-single-gpu-145820-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-145820-node-0-0-9xkvd"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "Job/bench-single-gpu-145820-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 14:58:58+00:00",
+    "object": "Job/bench-single-gpu-145820-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 14:58:20+00:00",
+    "object": "TrainJob/bench-single-gpu-145820",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-145820-f8852"
+  },
+  {
+    "time": "2026-07-13 14:58:20+00:00",
+    "object": "JobSet/bench-single-gpu-145820",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "TrainJob/bench-single-gpu-145820",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 14:58:21+00:00",
+    "object": "JobSet/bench-single-gpu-145820",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 14:58:58+00:00",
+    "object": "JobSet/bench-single-gpu-145820",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 14:58:58+00:00",
+    "object": "TrainJob/bench-single-gpu-145820",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-145820-f8852' is declared finished"
+  },
+  {
+    "time": "2026-07-13 15:10:01.128269+00:00",
+    "object": "Pod/bench-single-gpu-150959-node-0-0-q9tl4",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-150959-node-0-0-q9tl4 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:10:01+00:00",
+    "object": "Pod/bench-single-gpu-150959-node-0-0-q9tl4",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.230/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:10:01+00:00",
+    "object": "Pod/bench-single-gpu-150959-node-0-0-q9tl4",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:10:02+00:00",
+    "object": "Pod/bench-single-gpu-150959-node-0-0-q9tl4",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:10:02+00:00",
+    "object": "Pod/bench-single-gpu-150959-node-0-0-q9tl4",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:10:00+00:00",
+    "object": "Job/bench-single-gpu-150959-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:10:01+00:00",
+    "object": "Job/bench-single-gpu-150959-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-150959-node-0-0-q9tl4"
+  },
+  {
+    "time": "2026-07-13 15:10:01+00:00",
+    "object": "Job/bench-single-gpu-150959-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:10:38+00:00",
+    "object": "Job/bench-single-gpu-150959-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:10:00+00:00",
+    "object": "TrainJob/bench-single-gpu-150959",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-150959-8199c"
+  },
+  {
+    "time": "2026-07-13 15:10:00+00:00",
+    "object": "JobSet/bench-single-gpu-150959",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:10:00+00:00",
+    "object": "TrainJob/bench-single-gpu-150959",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:10:00+00:00",
+    "object": "JobSet/bench-single-gpu-150959",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:10:38+00:00",
+    "object": "JobSet/bench-single-gpu-150959",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:10:38+00:00",
+    "object": "TrainJob/bench-single-gpu-150959",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-150959-8199c' is declared finished"
+  },
+  {
+    "time": "2026-07-13 15:10:43.665311+00:00",
+    "object": "Pod/bench-single-gpu-151042-node-0-0-lkk2z",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-151042-node-0-0-lkk2z to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:10:44+00:00",
+    "object": "Pod/bench-single-gpu-151042-node-0-0-lkk2z",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.231/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:10:44+00:00",
+    "object": "Pod/bench-single-gpu-151042-node-0-0-lkk2z",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:10:44+00:00",
+    "object": "Pod/bench-single-gpu-151042-node-0-0-lkk2z",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:10:44+00:00",
+    "object": "Pod/bench-single-gpu-151042-node-0-0-lkk2z",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "Job/bench-single-gpu-151042-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "Job/bench-single-gpu-151042-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-151042-node-0-0-lkk2z"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "Job/bench-single-gpu-151042-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:11:20+00:00",
+    "object": "Job/bench-single-gpu-151042-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "TrainJob/bench-single-gpu-151042",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-151042-59eea"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "JobSet/bench-single-gpu-151042",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "TrainJob/bench-single-gpu-151042",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:10:43+00:00",
+    "object": "JobSet/bench-single-gpu-151042",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:11:20+00:00",
+    "object": "JobSet/bench-single-gpu-151042",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:11:20+00:00",
+    "object": "TrainJob/bench-single-gpu-151042",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-151042-59eea' is declared finished"
+  },
+  {
+    "time": "2026-07-13 15:11:25.457985+00:00",
+    "object": "Pod/bench-single-gpu-151124-node-0-0-gd4nt",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-single-gpu-151124-node-0-0-gd4nt to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-13 15:11:26+00:00",
+    "object": "Pod/bench-single-gpu-151124-node-0-0-gd4nt",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.4.232/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-13 15:11:26+00:00",
+    "object": "Pod/bench-single-gpu-151124-node-0-0-gd4nt",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-13 15:11:26+00:00",
+    "object": "Pod/bench-single-gpu-151124-node-0-0-gd4nt",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-13 15:11:26+00:00",
+    "object": "Pod/bench-single-gpu-151124-node-0-0-gd4nt",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "Job/bench-single-gpu-151124-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "Job/bench-single-gpu-151124-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-single-gpu-151124-node-0-0-gd4nt"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "Job/bench-single-gpu-151124-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-13 15:12:03+00:00",
+    "object": "Job/bench-single-gpu-151124-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "TrainJob/bench-single-gpu-151124",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-single-gpu-151124-78f79"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "JobSet/bench-single-gpu-151124",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "TrainJob/bench-single-gpu-151124",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-13 15:11:25+00:00",
+    "object": "JobSet/bench-single-gpu-151124",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-13 15:12:03+00:00",
+    "object": "JobSet/bench-single-gpu-151124",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-13 15:12:03+00:00",
+    "object": "TrainJob/bench-single-gpu-151124",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-single-gpu-151124-78f79' is declared finished"
+  }
+]

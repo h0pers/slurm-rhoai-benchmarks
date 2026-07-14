@@ -1,0 +1,39 @@
+Successfully installed Python packages: transformers datasets accelerate
+/opt/app-root/lib64/python3.12/site-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 25000/25000 [00:00<00:00, 372387.44 examples/s]
+Generating test split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 25000/25000 [00:00<00:00, 405384.63 examples/s]
+Generating unsupervised split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating unsupervised split:  84%|████████▍ | 42000/50000 [00:00<00:00, 409282.15 examples/s]Generating unsupervised split: 100%|██████████| 50000/50000 [00:00<00:00, 420010.86 examples/s]
+Map:   0%|          | 0/4000 [00:00<?, ? examples/s]Map:  25%|██▌       | 1000/4000 [00:00<00:00, 6677.22 examples/s]Map:  50%|█████     | 2000/4000 [00:00<00:00, 6599.11 examples/s]Map:  75%|███████▌  | 3000/4000 [00:00<00:00, 6614.25 examples/s]Map: 100%|██████████| 4000/4000 [00:00<00:00, 6673.57 examples/s]Map: 100%|██████████| 4000/4000 [00:00<00:00, 6599.70 examples/s]
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 7543.17it/s]
+[1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  0%|          | 0/200 [00:00<?, ?it/s]  0%|          | 1/200 [00:00<00:39,  4.98it/s]  2%|▎         | 5/200 [00:00<00:10, 18.10it/s]  4%|▍         | 9/200 [00:00<00:07, 24.10it/s]  6%|▋         | 13/200 [00:00<00:06, 27.36it/s]  8%|▊         | 17/200 [00:00<00:06, 29.37it/s] 10%|█         | 21/200 [00:00<00:05, 30.60it/s] 12%|█▎        | 25/200 [00:00<00:05, 31.48it/s]{'loss': '0.6378', 'grad_norm': '2.79', 'learning_rate': '4.4e-05', 'epoch': '0.1'}
+                                                 12%|█▎        | 25/200 [00:01<00:05, 31.48it/s] 14%|█▍        | 29/200 [00:01<00:07, 24.25it/s] 16%|█▋        | 33/200 [00:01<00:06, 26.52it/s] 18%|█▊        | 37/200 [00:01<00:05, 28.29it/s] 20%|██        | 41/200 [00:01<00:05, 29.62it/s] 22%|██▎       | 45/200 [00:01<00:05, 30.60it/s] 24%|██▍       | 49/200 [00:01<00:04, 31.35it/s]                                                {'loss': '0.3426', 'grad_norm': '9.878', 'learning_rate': '3.775e-05', 'epoch': '0.2'}
+ 25%|██▌       | 50/200 [00:01<00:04, 31.35it/s] 26%|██▋       | 53/200 [00:01<00:04, 31.78it/s] 28%|██▊       | 57/200 [00:02<00:04, 32.25it/s] 30%|███       | 61/200 [00:02<00:04, 32.52it/s] 32%|███▎      | 65/200 [00:02<00:04, 32.71it/s] 34%|███▍      | 69/200 [00:02<00:03, 32.89it/s] 36%|███▋      | 73/200 [00:02<00:03, 33.02it/s]                                                {'loss': '0.382', 'grad_norm': '3.997', 'learning_rate': '3.15e-05', 'epoch': '0.3'}
+ 38%|███▊      | 75/200 [00:02<00:03, 33.02it/s] 38%|███▊      | 77/200 [00:02<00:03, 32.98it/s] 40%|████      | 81/200 [00:02<00:03, 33.06it/s] 42%|████▎     | 85/200 [00:02<00:03, 33.08it/s] 44%|████▍     | 89/200 [00:02<00:03, 33.05it/s] 46%|████▋     | 93/200 [00:03<00:03, 33.00it/s] 48%|████▊     | 97/200 [00:03<00:03, 32.98it/s]{'loss': '0.3019', 'grad_norm': '13.51', 'learning_rate': '2.525e-05', 'epoch': '0.4'}
+                                                 50%|█████     | 100/200 [00:03<00:03, 32.98it/s] 50%|█████     | 101/200 [00:03<00:03, 32.96it/s] 52%|█████▎    | 105/200 [00:03<00:02, 32.99it/s] 55%|█████▍    | 109/200 [00:03<00:02, 33.03it/s] 56%|█████▋    | 113/200 [00:03<00:02, 33.03it/s] 58%|█████▊    | 117/200 [00:03<00:02, 33.05it/s] 60%|██████    | 121/200 [00:03<00:02, 33.09it/s] 62%|██████▎   | 125/200 [00:04<00:02, 33.06it/s]                                                 {'loss': '0.4023', 'grad_norm': '7.56', 'learning_rate': '1.9e-05', 'epoch': '0.5'}
+ 62%|██████▎   | 125/200 [00:04<00:02, 33.06it/s] 64%|██████▍   | 129/200 [00:04<00:02, 33.06it/s] 66%|██████▋   | 133/200 [00:04<00:02, 33.07it/s] 68%|██████▊   | 137/200 [00:04<00:01, 33.05it/s] 70%|███████   | 141/200 [00:04<00:01, 33.11it/s] 72%|███████▎  | 145/200 [00:04<00:01, 33.12it/s] 74%|███████▍  | 149/200 [00:04<00:01, 32.97it/s]                                                 {'loss': '0.338', 'grad_norm': '8.532', 'learning_rate': '1.275e-05', 'epoch': '0.6'}
+ 75%|███████▌  | 150/200 [00:04<00:01, 32.97it/s] 76%|███████▋  | 153/200 [00:04<00:01, 33.00it/s] 78%|███████▊  | 157/200 [00:05<00:01, 33.08it/s] 80%|████████  | 161/200 [00:05<00:01, 32.80it/s] 82%|████████▎ | 165/200 [00:05<00:01, 32.75it/s] 84%|████████▍ | 169/200 [00:05<00:00, 32.88it/s] 86%|████████▋ | 173/200 [00:05<00:00, 32.96it/s]{'loss': '0.3237', 'grad_norm': '9.598', 'learning_rate': '6.5e-06', 'epoch': '0.7'}
+                                                  88%|████████▊ | 175/200 [00:05<00:00, 32.96it/s] 88%|████████▊ | 177/200 [00:05<00:00, 32.96it/s] 90%|█████████ | 181/200 [00:05<00:00, 33.03it/s] 92%|█████████▎| 185/200 [00:05<00:00, 33.03it/s] 94%|█████████▍| 189/200 [00:06<00:00, 33.01it/s] 96%|█████████▋| 193/200 [00:06<00:00, 33.01it/s] 98%|█████████▊| 197/200 [00:06<00:00, 33.02it/s]                                                 {'loss': '0.3298', 'grad_norm': '8.091', 'learning_rate': '2.5e-07', 'epoch': '0.8'}
+100%|██████████| 200/200 [00:06<00:00, 33.02it/s]                                                 {'train_runtime': '6.344', 'train_samples_per_second': '504.4', 'train_steps_per_second': '31.52', 'train_loss': '0.3823', 'epoch': '0.8'}
+100%|██████████| 200/200 [00:06<00:00, 33.02it/s]100%|██████████| 200/200 [00:06<00:00, 31.52it/s]
+[BENCH] world_size=1
+[BENCH] train_runtime_s=6.3
+[BENCH] train_samples_per_second=504.39
+[rank0]:[W713 15:11:59.928547866 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

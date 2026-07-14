@@ -1,0 +1,914 @@
+[
+  {
+    "time": "2026-07-14 07:09:48.845645+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-0-75wtp to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:09:49+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.5/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:10:13+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:10:14+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:10:14+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:10:15+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-75wtp",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:10:59.172494+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-0-fpwv8 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:10:59+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.7/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:11:25+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:11:25+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:11:25+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:11:27+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-fpwv8",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:10:42.770729+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-0-jv59f to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.6/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:10:57+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-jv59f",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:11:53.349294+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-0-qgkzc to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:11:54+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.8/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:12:18+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:12:18+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:12:18+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:12:20+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-0-qgkzc",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:09:48.887063+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-1-67zhf to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:09:49+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.83/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:10:15+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:10:15+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:10:16+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:10:16+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-67zhf",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:10:42.799707+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-1-g5sg4 to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.84/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:10:43+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:10:56+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-g5sg4",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:10:59.201886+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-1-ldktj to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:10:59+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.85/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:11:26+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:11:26+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:11:26+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:11:28+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-ldktj",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:11:53.379424+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-070947-node-0-1-vxqj4 to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 07:11:54+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.86/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 07:11:54+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 07:11:54+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 07:11:54+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 07:12:19+00:00",
+    "object": "Pod/bench-fault-tolerant-070947-node-0-1-vxqj4",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-0-75wtp"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-1-67zhf"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-14 07:10:15+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-1-67zhf"
+  },
+  {
+    "time": "2026-07-14 07:10:15+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-0-75wtp"
+  },
+  {
+    "time": "2026-07-14 07:10:42+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 07:10:42+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-0-jv59f"
+  },
+  {
+    "time": "2026-07-14 07:10:42+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-1-g5sg4"
+  },
+  {
+    "time": "2026-07-14 07:10:57+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-0-jv59f"
+  },
+  {
+    "time": "2026-07-14 07:10:58+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 07:10:59+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-0-fpwv8"
+  },
+  {
+    "time": "2026-07-14 07:10:59+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-1-ldktj"
+  },
+  {
+    "time": "2026-07-14 07:11:27+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-1-ldktj"
+  },
+  {
+    "time": "2026-07-14 07:11:27+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-0-fpwv8"
+  },
+  {
+    "time": "2026-07-14 07:11:53+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 07:11:53+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-0-qgkzc"
+  },
+  {
+    "time": "2026-07-14 07:11:53+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-070947-node-0-1-vxqj4"
+  },
+  {
+    "time": "2026-07-14 07:12:19+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-1-vxqj4"
+  },
+  {
+    "time": "2026-07-14 07:12:19+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-070947-node-0-0-qgkzc"
+  },
+  {
+    "time": "2026-07-14 07:12:52+00:00",
+    "object": "Job/bench-fault-tolerant-070947-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "TrainJob/bench-fault-tolerant-070947",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-fault-tolerant-070947-8ff8c"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "JobSet/bench-fault-tolerant-070947",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "TrainJob/bench-fault-tolerant-070947",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-14 07:09:48+00:00",
+    "object": "JobSet/bench-fault-tolerant-070947",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-14 07:11:53+00:00",
+    "object": "JobSet/bench-fault-tolerant-070947",
+    "reason": "RestartJobSetFailurePolicyAction",
+    "message": "applying RestartJobSet failure policy action (first failed job: bench-fault-tolerant-070947-node-0)"
+  },
+  {
+    "time": "2026-07-14 07:12:52+00:00",
+    "object": "JobSet/bench-fault-tolerant-070947",
+    "reason": "ReachedMaxRestarts",
+    "message": "jobset failed due to reaching max number of restarts (first failed job: bench-fault-tolerant-070947-node-0)"
+  },
+  {
+    "time": "2026-07-14 07:12:52+00:00",
+    "object": "TrainJob/bench-fault-tolerant-070947",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-fault-tolerant-070947-8ff8c' is declared finished"
+  },
+  {
+    "time": "2026-07-14 08:13:05.196667+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-9fj7s",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081153-node-0-0-9fj7s to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-9fj7s",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.10/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-9fj7s",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:13:06+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-9fj7s",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:13:06+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-9fj7s",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:11:54.714167+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081153-node-0-0-ndct9 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.9/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:13:02+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-0-ndct9",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 08:11:54.745089+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081153-node-0-1-4grhs to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.87/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:11:55+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:13:01+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-4grhs",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 08:13:05.227018+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-zwpwb",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081153-node-0-1-zwpwb to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-zwpwb",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.88/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-zwpwb",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:13:06+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-zwpwb",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:13:06+00:00",
+    "object": "Pod/bench-fault-tolerant-081153-node-0-1-zwpwb",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081153-node-0-0-ndct9"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081153-node-0-1-4grhs"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-14 08:13:02+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-081153-node-0-0-ndct9"
+  },
+  {
+    "time": "2026-07-14 08:13:04+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081153-node-0-0-9fj7s"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081153-node-0-1-zwpwb"
+  },
+  {
+    "time": "2026-07-14 08:16:35+00:00",
+    "object": "Job/bench-fault-tolerant-081153-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081153",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-fault-tolerant-081153-e5a4e"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "JobSet/bench-fault-tolerant-081153",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081153",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-14 08:11:54+00:00",
+    "object": "JobSet/bench-fault-tolerant-081153",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-14 08:13:05+00:00",
+    "object": "JobSet/bench-fault-tolerant-081153",
+    "reason": "RestartJobSetFailurePolicyAction",
+    "message": "applying RestartJobSet failure policy action (first failed job: bench-fault-tolerant-081153-node-0)"
+  },
+  {
+    "time": "2026-07-14 08:16:35+00:00",
+    "object": "JobSet/bench-fault-tolerant-081153",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-14 08:16:35+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081153",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-fault-tolerant-081153-e5a4e' is declared finished"
+  },
+  {
+    "time": "2026-07-14 08:17:53.551735+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-ftdd7",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081642-node-0-0-ftdd7 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-ftdd7",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.12/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-ftdd7",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-ftdd7",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-ftdd7",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:16:43.628912+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081642-node-0-0-sv746 to ip-10-0-8-173.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.131.5.11/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:17:51+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-0-sv746",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 08:16:43.670410+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081642-node-0-1-v6wbs to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.89/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:16:44+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:17:50+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v6wbs",
+    "reason": "Killing",
+    "message": "Stopping container node"
+  },
+  {
+    "time": "2026-07-14 08:17:53.584720+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v8gl2",
+    "reason": "Scheduled",
+    "message": "Successfully assigned slurm-bench/bench-fault-tolerant-081642-node-0-1-v8gl2 to ip-10-0-6-43.us-east-2.compute.internal"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v8gl2",
+    "reason": "AddedInterface",
+    "message": "Add eth0 [10.128.6.90/23] from ovn-kubernetes"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v8gl2",
+    "reason": "Pulled",
+    "message": "Container image \"registry.redhat.io/rhoai/odh-th06-cuda130-torch210-py312-rhel9@sha256:c18bb50a0082f9258afeb95cf9d8bbc6af7a48e712a7587073f2b281ca2200b8\" already present on machine"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v8gl2",
+    "reason": "Created",
+    "message": "Created container: node"
+  },
+  {
+    "time": "2026-07-14 08:17:54+00:00",
+    "object": "Pod/bench-fault-tolerant-081642-node-0-1-v8gl2",
+    "reason": "Started",
+    "message": "Started container node"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "Suspended",
+    "message": "Job suspended"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081642-node-0-0-sv746"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081642-node-0-1-v6wbs"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "Resumed",
+    "message": "Job resumed"
+  },
+  {
+    "time": "2026-07-14 08:17:51+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "SuccessfulDelete",
+    "message": "Deleted pod: bench-fault-tolerant-081642-node-0-0-sv746"
+  },
+  {
+    "time": "2026-07-14 08:17:53+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "BackoffLimitExceeded",
+    "message": "Job has reached the specified backoff limit"
+  },
+  {
+    "time": "2026-07-14 08:17:53+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081642-node-0-0-ftdd7"
+  },
+  {
+    "time": "2026-07-14 08:17:53+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "SuccessfulCreate",
+    "message": "Created pod: bench-fault-tolerant-081642-node-0-1-v8gl2"
+  },
+  {
+    "time": "2026-07-14 08:21:25+00:00",
+    "object": "Job/bench-fault-tolerant-081642-node-0",
+    "reason": "Completed",
+    "message": "Job completed"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081642",
+    "reason": "CreatedWorkload",
+    "message": "Created Workload: slurm-bench/trainjob-bench-fault-tolerant-081642-f3240"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "JobSet/bench-fault-tolerant-081642",
+    "reason": "SuspendedJobs",
+    "message": "jobset is suspended"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081642",
+    "reason": "Started",
+    "message": "Admitted by clusterQueue default"
+  },
+  {
+    "time": "2026-07-14 08:16:43+00:00",
+    "object": "JobSet/bench-fault-tolerant-081642",
+    "reason": "ResumeJobs",
+    "message": "jobset is resumed"
+  },
+  {
+    "time": "2026-07-14 08:17:53+00:00",
+    "object": "JobSet/bench-fault-tolerant-081642",
+    "reason": "RestartJobSetFailurePolicyAction",
+    "message": "applying RestartJobSet failure policy action (first failed job: bench-fault-tolerant-081642-node-0)"
+  },
+  {
+    "time": "2026-07-14 08:21:25+00:00",
+    "object": "JobSet/bench-fault-tolerant-081642",
+    "reason": "AllJobsCompleted",
+    "message": "jobset completed successfully"
+  },
+  {
+    "time": "2026-07-14 08:21:25+00:00",
+    "object": "TrainJob/bench-fault-tolerant-081642",
+    "reason": "FinishedWorkload",
+    "message": "Workload 'slurm-bench/trainjob-bench-fault-tolerant-081642-f3240' is declared finished"
+  }
+]

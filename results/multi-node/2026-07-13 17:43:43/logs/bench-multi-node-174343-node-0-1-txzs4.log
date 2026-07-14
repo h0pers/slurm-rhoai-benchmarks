@@ -1,0 +1,53 @@
+Successfully installed Python packages: transformers datasets accelerate
+W0713 17:43:49.328000 1 torch/distributed/run.py:852] 
+W0713 17:43:49.328000 1 torch/distributed/run.py:852] *****************************************
+W0713 17:43:49.328000 1 torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0713 17:43:49.328000 1 torch/distributed/run.py:852] *****************************************
+/opt/app-root/lib64/python3.12/site-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+/opt/app-root/lib64/python3.12/site-packages/torchao/quantization/quant_api.py:1731: SyntaxWarning: invalid escape sequence '\.'
+  """Configuration class for applying different quantization configs to modules or parameters based on their fully qualified names (FQNs).
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 25000/25000 [00:00<00:00, 460097.50 examples/s]
+Generating test split:   0%|          | 0/25000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 25000/25000 [00:00<00:00, 498937.01 examples/s]
+Generating unsupervised split:   0%|          | 0/50000 [00:00<?, ? examples/s]Generating unsupervised split: 100%|██████████| 50000/50000 [00:00<00:00, 499678.82 examples/s]
+Map:   0%|          | 0/4000 [00:00<?, ? examples/s]Map:   0%|          | 0/4000 [00:00<?, ? examples/s]Map:  25%|██▌       | 1000/4000 [00:00<00:00, 7787.32 examples/s]Map:  25%|██▌       | 1000/4000 [00:00<00:00, 7714.88 examples/s]Map:  50%|█████     | 2000/4000 [00:00<00:00, 7701.11 examples/s]Map:  50%|█████     | 2000/4000 [00:00<00:00, 7594.15 examples/s]Map:  75%|███████▌  | 3000/4000 [00:00<00:00, 7730.27 examples/s]Map:  75%|███████▌  | 3000/4000 [00:00<00:00, 7627.79 examples/s]Map: 100%|██████████| 4000/4000 [00:00<00:00, 7773.30 examples/s]Map: 100%|██████████| 4000/4000 [00:00<00:00, 7685.92 examples/s]
+Map: 100%|██████████| 4000/4000 [00:00<00:00, 7701.28 examples/s]Map: 100%|██████████| 4000/4000 [00:00<00:00, 7605.43 examples/s]
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 7800.31it/s]
+[1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+pre_classifier.bias     | MISSING    | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 8343.05it/s]
+[1mDistilBertForSequenceClassification LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+classifier.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[rank2]:[W713 17:44:10.700144423 reducer.cpp:1500] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W713 17:44:10.700300501 reducer.cpp:1500] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W713 17:44:56.813607032 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

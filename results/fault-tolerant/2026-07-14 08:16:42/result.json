@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "scenario": "fault-tolerant",
+  "run_id": "2026-07-14 08:16:42",
+  "config": {
+    "name": "fault-tolerant",
+    "workload_class": 4,
+    "description": "Checkpointed training surviving a worker-pod kill",
+    "queue": "default",
+    "runtime": "torch-distributed",
+    "repetitions": 3,
+    "timeout_s": 3600,
+    "pass_criteria": [
+      "job recovers and reaches Complete after pod kill",
+      "training resumed from checkpoint (resumed step > 0 in logs)",
+      "recovery time (kill -> training resumed) recorded"
+    ],
+    "checks": [
+      "completed",
+      "resumed_from_checkpoint"
+    ],
+    "kind": "train",
+    "nodes": 2,
+    "resources_per_node": {
+      "nvidia.com/gpu": 2,
+      "cpu": "16",
+      "memory": "64Gi"
+    },
+    "training": {
+      "model": "distilbert-base-uncased",
+      "dataset": "imdb",
+      "dataset_size": 4000,
+      "batch_size": 16,
+      "max_steps": 600
+    },
+    "checkpoint": {
+      "pvc": "bench-checkpoints",
+      "mount_path": "/mnt/checkpoints",
+      "save_steps": 50
+    },
+    "fault": {
+      "action": "delete-worker-pod",
+      "target": "node-1",
+      "after_s": 60
+    },
+    "baseline_scenario": null
+  },
+  "config_hash": "71602e37a4d6",
+  "versions": {
+    "sdk": "0.4.1",
+    "runtime": "torch-distributed",
+    "kubernetes": "v1.34.6"
+  },
+  "timestamps": {
+    "submitted": "2026-07-14T08:16:43Z",
+    "admitted": "2026-07-14T08:16:43Z",
+    "fault_injected": "2026-07-14T08:17:50Z",
+    "resumed": "2026-07-14T08:17:54Z",
+    "pods_running": "2026-07-14T08:17:54Z",
+    "completed": "2026-07-14T08:21:25Z"
+  },
+  "durations_s": {
+    "queue": 0.0,
+    "startup": 71.0,
+    "training": 211.0,
+    "total": 282.0
+  },
+  "metrics": {
+    "world_size": 4,
+    "train_runtime_s": 179.4,
+    "train_samples_per_second": 214.0,
+    "resumed_from_step": 100,
+    "mean_pct": 97.8,
+    "max_pct": 100.0,
+    "gpu_count": 4,
+    "gang_start_spread_s": 0.0,
+    "recovery_s": 4.0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": ""
+}

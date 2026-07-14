@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "scenario": "queue-priority",
+  "run_id": "2026-07-14 09:03:19",
+  "config": {
+    "name": "queue-priority",
+    "workload_class": 6,
+    "description": "Priority-based preemption on a contended queue",
+    "queue": "bench-queue",
+    "runtime": "torch-distributed",
+    "repetitions": 3,
+    "timeout_s": 1200,
+    "pass_criteria": [
+      "low-priority workload is evicted (Workload condition Evicted/Preempted)",
+      "high-priority job admitted and runs to completion",
+      "preemption latency (high-prio submit -> low-prio evicted -> high-prio running) recorded",
+      "low-priority workload requeued after high-priority completes"
+    ],
+    "checks": [
+      "low_evicted",
+      "completed",
+      "low_requeued"
+    ],
+    "kind": "preemption",
+    "low_priority": {
+      "nodes": 2,
+      "resources_per_node": {
+        "nvidia.com/gpu": 3,
+        "cpu": "16",
+        "memory": "64Gi"
+      },
+      "hold_s": 600,
+      "priority_class": "bench-low",
+      "submit_after_s": null
+    },
+    "high_priority": {
+      "nodes": 1,
+      "resources_per_node": {
+        "nvidia.com/gpu": 4,
+        "cpu": "8",
+        "memory": "32Gi"
+      },
+      "hold_s": 30,
+      "priority_class": "bench-high",
+      "submit_after_s": 60
+    }
+  },
+  "config_hash": "e647c1880e9d",
+  "versions": {
+    "sdk": "0.4.1",
+    "runtime": "torch-distributed",
+    "kubernetes": "v1.34.6"
+  },
+  "timestamps": {
+    "submitted": "2026-07-14T09:09:35Z",
+    "low_evicted": "2026-07-14T09:09:35Z",
+    "admitted": "2026-07-14T09:09:35Z",
+    "pods_running": "2026-07-14T09:09:37Z",
+    "gang_start_spread_s": 0.0,
+    "completed": "2026-07-14T09:10:13Z",
+    "low_requeued": "2026-07-14T09:10:14Z"
+  },
+  "durations_s": {
+    "queue": 0.0,
+    "startup": 2.0,
+    "training": 36.0,
+    "total": 38.0
+  },
+  "metrics": {
+    "preemption_latency_s": 0.0
+  },
+  "passed": true,
+  "failures": [],
+  "notes": ""
+}
