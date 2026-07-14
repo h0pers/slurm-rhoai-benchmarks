@@ -9,20 +9,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from kubeflow.trainer import CustomTrainer, KubernetesBackendConfig, TrainerClient
-from kubeflow.trainer.options import (
-    ContainerPatch,
-    JobSetSpecPatch,
-    JobSetTemplatePatch,
-    JobSpecPatch,
-    JobTemplatePatch,
-    Labels,
-    Name,
-    PodSpecPatch,
-    PodTemplatePatch,
-    ReplicatedJobPatch,
-    RuntimePatch,
-    TrainingRuntimeSpecPatch,
-)
+from kubeflow.trainer.options import Labels, Name
 
 from bench.config import settings
 from bench.runner import artifacts, kube, metrics
@@ -43,9 +30,13 @@ def submit_train(scenario: TrainScenario) -> str:
     func_args = scenario.training.model_dump()
     options = [Name(job), Labels({QUEUE_LABEL: scenario.queue})]
     if scenario.checkpoint:
+        # The checkpoint PVC is mounted by the ClusterTrainingRuntime itself
+        # (see runbook: "Provide the shared checkpoint volume"). The SDK's
+        # RuntimePatch cannot mount it here: SDK 0.4.x serializes patches into
+        # spec.runtimePatches, a field the cluster's v1alpha1 TrainJob CRD does
+        # not have, so Kubernetes silently prunes it and the volume never lands.
         func_args["checkpoint_dir"] = scenario.checkpoint.mount_path + "/" + job
         func_args["save_steps"] = scenario.checkpoint.save_steps
-        options.append(_pvc_mount(scenario.checkpoint.pvc, scenario.checkpoint.mount_path))
     trainer = CustomTrainer(
         func=train_func,
         func_args=func_args,
@@ -146,34 +137,6 @@ def _client() -> TrainerClient:
 
 def _job_name(prefix: str) -> str:
     return "bench-" + prefix + "-" + datetime.now(UTC).strftime("%H%M%S")
-
-
-def _pvc_mount(pvc: str, mount_path: str) -> RuntimePatch:
-    """Mount the checkpoint PVC into the trainer container of every node pod."""
-    pod_spec = PodSpecPatch(
-        volumes=[{"name": "checkpoints", "persistentVolumeClaim": {"claimName": pvc}}],
-        containers=[
-            ContainerPatch(
-                name="node", volume_mounts=[{"name": "checkpoints", "mountPath": mount_path}]
-            )
-        ],
-    )
-    return RuntimePatch(
-        training_runtime_spec=TrainingRuntimeSpecPatch(
-            template=JobSetTemplatePatch(
-                spec=JobSetSpecPatch(
-                    replicated_jobs=[
-                        ReplicatedJobPatch(
-                            name="node",
-                            template=JobTemplatePatch(
-                                spec=JobSpecPatch(template=PodTemplatePatch(spec=pod_spec))
-                            ),
-                        )
-                    ]
-                )
-            )
-        )
-    )
 
 
 def _sdk_version() -> str:

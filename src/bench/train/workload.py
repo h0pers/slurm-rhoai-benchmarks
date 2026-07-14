@@ -57,6 +57,17 @@ def train_func(
     model = AutoModelForSequenceClassification.from_pretrained(model, num_labels=2)
 
     output_dir = checkpoint_dir or "/tmp/bench-output"
+
+    # Fail loudly if the checkpoint PVC is not mounted. Without this, the first
+    # write lands as an opaque PermissionError deep inside Trainer.__init__.
+    if checkpoint_dir:
+        mount_root = os.path.dirname(checkpoint_dir.rstrip("/"))
+        if not os.access(mount_root, os.W_OK):
+            raise RuntimeError(
+                "[BENCH] checkpoint mount " + mount_root + " is not writable - "
+                "is the checkpoint PVC mounted by the runtime?"
+            )
+
     training_args = TrainingArguments(
         output_dir=output_dir,
         max_steps=max_steps,

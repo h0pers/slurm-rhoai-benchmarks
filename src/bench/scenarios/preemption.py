@@ -51,10 +51,13 @@ def run_preemption(
             break
         time.sleep(settings.poll_interval_s)
 
-    requeued = kube.workload_condition(low, "QuotaReserved")
-    if requeued and requeued > timestamps.get("low_evicted", "9999"):
-        timestamps["low_requeued"] = requeued
-        log_fn(console, "Low-priority requeued", "")
+    while time.monotonic() < deadline:
+        requeued = kube.workload_condition(low, "QuotaReserved")
+        if requeued and requeued > timestamps.get("low_evicted", "9999"):
+            timestamps["low_requeued"] = requeued
+            log_fn(console, "Low-priority requeued", "")
+            break
+        time.sleep(settings.poll_interval_s)
 
     run_metrics: dict[str, Any] = {
         "preemption_latency_s": (

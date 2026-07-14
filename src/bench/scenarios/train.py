@@ -87,6 +87,13 @@ def _watch_recovery(
             log_fn(console, "Recovered", f"recovery: {recovery_s}s")
             break
 
+        # Stop watching if the job reached a terminal state without recovering
+        # (e.g. it exhausted its restart budget). Otherwise this loop would
+        # spin until the full timeout_s and the run would never record a result.
+        if kube.job_condition(job, "Failed") or kube.job_condition(job, "Complete"):
+            log_fn(console, "No recovery", "job reached terminal state before recovery")
+            break
+
         time.sleep(settings.poll_interval_s)
 
     timestamps.pop("pods_running", None)
